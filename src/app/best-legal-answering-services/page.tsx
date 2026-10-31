@@ -105,8 +105,7 @@ export default function BestLegalAnsweringServices() {
       <p>
         Each of the ten criteria is a question a managing partner asks before signing, and each service gets the answer its own website
         gives. Where a site does not state a fact, the table says &quot;not published&quot; rather than guessing. Call Della&apos;s column
-        comes from the same plan configuration as the <Link href="/cost">cost page</Link>, so it cannot drift from what we charge. On a
-        phone the table scrolls sideways inside its frame.
+        comes from the same plan configuration as the <Link href="/cost">cost page</Link>, so it cannot drift from what we charge. On a phone the table stacks, one criterion at a time.
       </p>
       <ol>
         {CRITERIA.map((c) => (
