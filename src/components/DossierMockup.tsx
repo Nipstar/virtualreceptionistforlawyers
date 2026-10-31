@@ -33,7 +33,7 @@ const defaultHeroData: HeroDossier = {
 export const DossierMockup = ({ variant, data }: DossierMockupProps) => {
   const ariaLabel =
     variant === 'hero'
-      ? 'Sample Della intake report: caller name, phone number, incident summary, urgency stamp.'
+      ? 'Sample Della intake report: caller, incident summary, urgency stamp.'
       : 'Sample morning dossier dashboard: overnight calls sorted by urgency tier with caller details and recommended actions.';
 
   if (variant === 'hero') {

@@ -68,10 +68,15 @@ export default function PrivacyPage() {
 
       <h2>5. Data Security</h2>
       <p>
-        We implement robust, industry-standard security measures, including at-rest and in-transit encryption (AES-256 and TLS 1.2+), to protect Caller Information from unauthorized access, alteration, disclosure, or destruction. 
+        We encrypt call data in transit and at rest to protect Caller Information from unauthorized access, alteration, disclosure, or destruction. 
       </p>
 
-      <h2>6. Data Deletion Requests</h2>
+      <h2>6. This Website</h2>
+      <p>
+        This site (virtualreceptionistforlawyers.com) has no forms and sets no advertising cookies. We count visits with Plausible Analytics, which does not use cookies. The demo booking calendar is provided by our CRM (crm.antekautomation.com) and loads only when you choose Book a demo; anything you enter there is used to arrange and run your demo.
+      </p>
+
+      <h2>7. Data Deletion Requests</h2>
       <p>
         Because Call Della acts as a data processor on behalf of the law firm, any requests from callers to delete their data must be directed to the respective law firm. We provide our Customers with the tooling necessary to permanently expunge records from our infrastructure upon request.
       </p>

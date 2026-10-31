@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, PLAUSIBLE_DOMAIN } from "@/lib/config";
-import { graph, orgNode, websiteNode, founderNode } from "@/lib/schema";
+import { graph, orgNode, websiteNode, founderNode, FOUNDER_URL } from "@/lib/schema";
 import { page } from "@/data/pages";
 import { JsonLd } from "@/components/JsonLd";
 import { BookingModal } from "@/components/BookingModal";
@@ -27,12 +27,12 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI Legal Intake for Law Firms, After Hours | Call Della",
+    default: "Virtual Receptionist for Lawyers | Call Della",
     template: "%s | Call Della",
   },
   description: page("/").description,
   applicationName: "Call Della",
-  authors: [{ name: "Andy Norman", url: `${SITE_URL}/about/andy-norman` }],
+  authors: [{ name: "Andy Norman", url: FOUNDER_URL }],
   creator: "Call Della",
   publisher: "Call Della",
   alternates: { canonical: "/" },
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Call Della",
-    title: "AI Legal Intake for Law Firms, After Hours | Call Della",
+    title: "Virtual Receptionist for Lawyers | Call Della",
     description:
       "Della answers your firm's overnight calls, qualifies every caller, and delivers a triage-ready dossier by dawn.",
     images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Call Della" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Legal Intake for Law Firms, After Hours | Call Della",
+    title: "Virtual Receptionist for Lawyers | Call Della",
     description:
       "Della answers your firm's overnight calls and delivers a triage-ready dossier by dawn.",
     images: ["/og-default.png"],
@@ -70,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-US"
       className={`${newsreader.variable} ${jetbrainsMono.variable} h-full antialiased`}
       data-theme="light"
     >

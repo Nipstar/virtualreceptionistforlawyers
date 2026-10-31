@@ -8,6 +8,7 @@ import { Eyebrow } from './Typography';
 import { JsonLd } from './JsonLd';
 import { graph, articleNode, collectionNode, type Citation } from '@/lib/schema';
 import { PAGES, formatDate } from '@/data/pages';
+import { calldella } from '@/lib/utm';
 
 type Props = {
   eyebrow: string;
@@ -86,7 +87,7 @@ export const ArticleLayout = ({
           </h1>
           <div className="flex flex-wrap gap-4 items-center border-y border-[var(--rule-soft)] py-3 mb-10 text-[11px] font-mono text-[var(--ink-soft)] uppercase tracking-[0.1em]">
             <span>
-              BY <a href="/about/andy-norman" className="no-underline hover:underline">{author}</a>, FOUNDER, CALL DELLA
+              BY <a href={calldella('/about/andy-norman', (slug ?? 'article').replace(/^\//, '').replace(/\//g, '-'), 'byline')} className="no-underline hover:underline">{author}</a>, FOUNDER, CALL DELLA
             </span>
             <span aria-hidden="true">·</span>
             <span>

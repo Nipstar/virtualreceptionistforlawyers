@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const OUT = 'out';
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://calldella.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://virtualreceptionistforlawyers.com';
 
 const htmlFiles = (dir) =>
   readdirSync(dir).flatMap((f) => {

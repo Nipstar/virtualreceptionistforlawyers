@@ -77,6 +77,7 @@ export const BookingModal = () => {
 
 export const openBookingModal = () => {
   if (typeof window !== 'undefined') {
+    (window as unknown as { plausible?: (e: string, o?: object) => void }).plausible?.('demo_click', { props: { page: location.pathname } });
     window.dispatchEvent(new Event('open-booking-modal'));
   }
 };
