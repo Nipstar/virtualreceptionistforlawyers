@@ -3,7 +3,7 @@ import { pageMeta } from '@/data/pages';
 import { FAQ } from '@/components/FAQ';
 import { ForwardBox } from '@/components/ForwardBox';
 import { CTAButton } from '@/components/CTAButton';
-import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, PlanTable, DemoCTA, MissedCallSection, Table } from '@/components/Page';
+import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, PlanTable, SampleDossier, MissedCallSection, Table } from '@/components/Page';
 import { ALERTS, OVERAGE, SOLO, PRACTICE, SPANISH_AREAS, SRC, forwardText } from '@/lib/copy';
 import { DEMO_MINUTES, formatPrice } from '@/lib/plans';
 
@@ -109,7 +109,9 @@ export default function LegalAnsweringService() {
         ]}
       />
 
-      <DemoCTA>Book a demo and we'll run a live new-client call for your practice area while you listen, then walk you through the dossier she files.</DemoCTA>
+      <SampleDossier>
+        <p>Book a demo and we'll run a live new-client call for your practice area while you listen, then walk you through the dossier she files. Below is a sample, with a test caller.</p>
+      </SampleDossier>
 
       <FAQ items={faq} heading="Questions about legal answering services" eyebrow="FAQ" />
       <p>

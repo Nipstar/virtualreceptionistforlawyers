@@ -53,9 +53,9 @@ export default function BestLegalAnsweringServices() {
 
       <h2>What is the best legal answering service for a law firm?</h2>
       <AnswerBlock>
-        The best legal answering service is the one that answers at the hours you are closed and leaves a usable intake behind, not a
-        message. In Clio&apos;s 2024 secret-shopper study only 40% of law firms answered a prospective client&apos;s call
-        <Source src={SRC.obj2025} />. Below, Call Della, Smith.ai, Answering Legal, Posh and Ruby are scored on the same ten criteria.
+        The best legal answering service answers at the hours you are closed and leaves a usable intake behind, not a message. In
+        Clio&apos;s 2024 secret-shopper study only 40% of law firms answered a prospective client&apos;s call
+        <Source src={SRC.obj2025} />. Call Della, Smith.ai, Answering Legal, Posh and Ruby are scored below on ten criteria.
       </AnswerBlock>
       <p>
         Call Della wrote this page and is one of the five services on it. Every competitor fact comes from that company&apos;s own site,
