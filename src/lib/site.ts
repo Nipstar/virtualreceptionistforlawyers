@@ -10,15 +10,13 @@ export const SITE = {
   name: 'Virtual Receptionist for Lawyers',
   domain: 'virtualreceptionistforlawyers.com',
   // Small line under the logo.
-  tagline: 'BY CALL DELLA · LEGAL INTAKE',
+  tagline: 'EST. 2026 · LEGAL INTAKE',
   // Main navigation (desktop row and mobile drawer).
   nav: [
     { href: '/legal-answering-service', label: 'Legal answering service' },
-    { href: '/24-7-answering-service', label: '24/7' },
     { href: '/ai-receptionist', label: 'AI receptionist' },
     { href: '/cost', label: 'Cost' },
     { href: '/best-legal-answering-services', label: 'Compare' },
-    { href: '/about', label: 'About' },
   ] as NavLink[],
   // Optional "Guides" dropdown.
   guides: [

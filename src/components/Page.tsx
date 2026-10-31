@@ -6,6 +6,7 @@ import { Footer } from './Footer';
 import { PaperTexture } from './PaperTexture';
 import { Breadcrumbs } from './Breadcrumbs';
 import { CTAButton } from './CTAButton';
+import { Eyebrow, Body } from './Typography';
 import { DossierMockup } from './DossierMockup';
 import { JsonLd } from './JsonLd';
 import { MissedCallCalculator, DEFAULT_EXAMPLE, type MissedCallExample } from './MissedCallCalculator';
@@ -35,7 +36,7 @@ export const ServiceLayout = ({
       <PaperTexture />
       <div className="relative z-20 flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow px-4 md:px-8 pt-10 pb-16 max-w-[860px] mx-auto w-full article-body">
+        <main className="flex-grow px-4 md:px-8 pt-10 pb-16 max-w-[1180px] mx-auto w-full article-body feeder-main feeder-main-860">
           {crumb && <Breadcrumbs items={[{ name: crumb, href: slug }]} />}
           {children}
         </main>
@@ -45,23 +46,28 @@ export const ServiceLayout = ({
   );
 };
 
-export const SecondaryLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a
-    href={href}
-    className="inline-flex items-center min-h-[48px] px-5 py-[11px] text-[11.5px] font-mono uppercase font-bold tracking-[0.14em] border-[1.5px] border-[var(--ink)] text-[var(--ink)] !no-underline"
-  >
-    {children}
-  </a>
-);
+const HERO_DOSSIER = {
+  intakeId: 'SAMPLE-0001',
+  timestamp: 'SAMPLE · TUESDAY · 9:42 PM',
+  callerName: 'Test Caller A',
+  duration: '6M 05S',
+  agentTag: 'DELLA',
+  matterLine: 'RE: REAR-END COLLISION · URGENCY 4 OF 5',
+  quote: 'Neck and back pain, ER visit the same night. Other driver at fault, police report filed. Other driver’s insurer named. Callback number captured.',
+  actionLine: 'Sample brief with a test caller. Call back first thing: treatment started, fault clear.',
+};
 
+// Same shape as calldella.com's HomeHero: copy left, sample dossier right, one column under md.
 export const Hero = ({
   slug,
+  eyebrow = 'After-hours intake specialist',
   h1,
   sub,
   trust,
   secondary = { href: '#dossier', label: 'See the dossier' },
 }: {
   slug: string;
+  eyebrow?: string;
   h1: string;
   sub: string;
   trust?: string;
@@ -69,22 +75,40 @@ export const Hero = ({
 }) => {
   const entry = page(slug);
   return (
-    <header className="pt-6 pb-8">
-      <h1 className="text-[36px] md:text-[52px] font-semibold text-[var(--ink)] font-serif tracking-[-0.03em] leading-[1.05] m-0 mb-5">{h1}</h1>
-      <p className="!text-[20px] !leading-[1.5] text-[var(--ink-soft)] italic max-w-[680px]">{sub}</p>
-      <div className="flex flex-wrap gap-3 mt-6">
-        <CTAButton primary large>Book a demo</CTAButton>
-        <SecondaryLink href={secondary.href}>{secondary.label}</SecondaryLink>
+    <section className="col-wide pt-4 md:pt-8 pb-12 md:pb-16">
+      <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-12 md:gap-16 items-center">
+        <div>
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h1 className="text-[36px] md:text-[54px] font-semibold text-[var(--ink)] font-serif tracking-[-0.03em] leading-[1.05] m-0">{h1}</h1>
+          <div className="mt-7 max-w-[540px]">
+            <Body size={18}>{sub}</Body>
+          </div>
+          <div className="mt-9 flex flex-wrap gap-4">
+            <CTAButton primary large>Book a demo</CTAButton>
+            <a
+              href={secondary.href}
+              className="inline-flex items-center min-h-[48px] px-6 font-mono uppercase font-bold tracking-[0.14em] text-[13px] border-[1.5px] border-[var(--ink)] text-[var(--ink)] !no-underline"
+            >
+              {secondary.label}
+            </a>
+          </div>
+          <p className="mt-4 !text-[12px] text-[var(--ink-soft)] font-mono tracking-[0.08em] !m-0 !mt-4">
+            {trust ?? `The demo takes ${DEMO_MINUTES} minutes: a live Della call for your practice area.`}
+          </p>
+          <p className="!text-[11px] text-[var(--ink-faint)] font-mono uppercase tracking-[0.1em] !m-0 !mt-2">
+            Last updated <time dateTime={entry.dateModified}>{formatDate(entry.dateModified)}</time>
+          </p>
+        </div>
+        <figure className="m-0">
+          <DossierMockup variant="hero" data={HERO_DOSSIER} />
+          <figcaption className="mt-3 text-[10px] text-[var(--ink-faint)] font-mono tracking-[0.14em] uppercase text-center">
+            Sample dossier. A test caller, not a real one.
+          </figcaption>
+        </figure>
       </div>
-      {trust && <p className="mt-5 !text-[14px] font-mono uppercase tracking-[0.08em] text-[var(--ink-soft)]">{trust}</p>}
-      <p className="mt-2 !text-[12px] font-mono uppercase tracking-[0.1em] text-[var(--ink-soft)]">
-        Last updated <time dateTime={entry.dateModified}>{formatDate(entry.dateModified)}</time>
-      </p>
-    </header>
+    </section>
   );
 };
-
-// The 40 to 60 word paragraph AI engines lift. One per page.
 export const AnswerBlock = ({ label = 'The short answer', children }: { label?: string; children: React.ReactNode }) => (
   <div className="answer-block bg-[var(--paper)] border-[1.5px] border-[var(--rule)] p-6 md:p-8 mt-8 mb-6 shadow-[6px_6px_0_var(--rule)] relative">
     <div className="absolute top-[-1px] left-[22px] bg-[var(--paper-edge)] border-[1.5px] border-[var(--rule)] border-b-0 px-3 py-[3px] text-[9.5px] font-bold tracking-[0.16em] font-mono uppercase -translate-y-full">
@@ -167,16 +191,7 @@ export const SampleDossier = ({ heading = 'Hear Della take a call', children }: 
     {children}
     <DossierMockup
       variant="hero"
-      data={{
-        intakeId: 'SAMPLE-0001',
-        timestamp: 'SAMPLE · TUESDAY · 9:42 PM',
-        callerName: 'Test Caller A',
-        duration: '6M 05S',
-        agentTag: 'DELLA',
-        matterLine: 'RE: REAR-END COLLISION · URGENCY 4 OF 5',
-        quote: 'Neck and back pain, ER visit the same night. Other driver at fault, police report filed. Other driver’s insurer named. Callback number captured.',
-        actionLine: 'Sample brief with a test caller. Call back first thing: treatment started, fault clear.',
-      }}
+      data={HERO_DOSSIER}
     />
   </section>
 );
