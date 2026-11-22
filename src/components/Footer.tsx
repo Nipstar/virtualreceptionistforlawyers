@@ -31,7 +31,7 @@ export const Footer = () => (
     <div className="max-w-[1180px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] gap-x-6 gap-y-10">
       <div className="col-span-2 md:col-span-3 lg:col-span-1">
         <Link href="/" className="block no-underline">
-          <div className="text-[22px] font-semibold text-[var(--ink)] font-serif tracking-tight leading-none">call della</div>
+          <div className="text-[22px] font-semibold text-[var(--ink)] font-serif tracking-tight leading-none">call maren</div>
           <div className="text-[9.5px] font-bold text-[var(--ink-soft)] tracking-[0.22em] font-mono mt-1.5 uppercase">{SITE.tagline}</div>
         </Link>
         <p className="text-[13px] text-[var(--ink-soft)] font-serif italic mt-3.5 max-w-[320px]">{CATEGORY_DEFINITION}</p>
@@ -51,7 +51,7 @@ export const Footer = () => (
       ))}
     </div>
     <div className="max-w-[1180px] mx-auto mt-10 pt-5 border-t border-[var(--rule-soft)] text-center text-[10px] text-[var(--ink-soft)] font-mono tracking-[0.18em]">
-      © 2026 CALL DELLA · ALL RIGHTS RESERVED · DELLA IS MADE BY{' '}
+      © 2026 CALL MAREN · ALL RIGHTS RESERVED · MAREN IS MADE BY{' '}
       <a href="https://www.antekautomation.com" className="text-[var(--ink-soft)] underline decoration-[var(--rule-soft)] underline-offset-4 hover:text-[var(--ink)]">ANTEK AUTOMATION</a>
     </div>
   </footer>

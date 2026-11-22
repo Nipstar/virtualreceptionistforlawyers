@@ -23,7 +23,7 @@ const defaultHeroData: HeroDossier = {
   timestamp: '04 MAY 2026 · 23:42 CDT',
   callerName: 'Maria Gonzalez',
   duration: '4M 18S',
-  agentTag: 'DELLA',
+  agentTag: 'MAREN',
   matterLine: 'RE: REAR-END COLLISION, I-90',
   quote:
     '"I was stopped at a red light and this guy just ploughed into me. I\'ve been in pain since and don\'t know what to do."',
@@ -33,7 +33,7 @@ const defaultHeroData: HeroDossier = {
 export const DossierMockup = ({ variant, data }: DossierMockupProps) => {
   const ariaLabel =
     variant === 'hero'
-      ? 'Sample Della intake report: caller, incident summary, urgency stamp.'
+      ? 'Sample Maren intake report: caller, incident summary, urgency stamp.'
       : 'Sample morning dossier dashboard: overnight calls sorted by urgency tier with caller details and recommended actions.';
 
   if (variant === 'hero') {
@@ -96,7 +96,7 @@ export const DossierMockup = ({ variant, data }: DossierMockupProps) => {
           Good evening, Harrison & Moore
         </div>
         <p className="text-[13px] text-[var(--ink-soft)] font-serif italic mt-1.5 mb-6">
-          Della handled 6 calls overnight. 2 require urgent follow-up; 2 pending review.
+          Maren handled 6 calls overnight. 2 require urgent follow-up; 2 pending review.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-7">

@@ -63,7 +63,7 @@ export const BookingModal = () => {
             <iframe
               src={BOOKING_URL}
               id={`${WIDGET_ID}_modal`}
-              title="Book a demo with Call Della"
+              title="Book a demo with Call Maren"
               className="w-full min-h-full border-0 overflow-hidden bg-[var(--paper)]"
               scrolling="no"
               allow="payment"

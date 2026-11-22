@@ -42,10 +42,10 @@ for (const f of files(OUT)) {
 
   for (const [, href] of raw.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
     const u = decode(href);
-    if (/^https?:\/\/(www\.)?calldella\.com/.test(u)) {
+    if (/^https?:\/\/(www\.)?callmaren\.com/.test(u)) {
       const q = new URL(u).searchParams;
       const missing = UTM.filter((k) => !q.get(k));
-      if (missing.length) fail(f, `calldella link without ${missing.join(', ')}: ${u}`);
+      if (missing.length) fail(f, `callmaren link without ${missing.join(', ')}: ${u}`);
     }
   }
 

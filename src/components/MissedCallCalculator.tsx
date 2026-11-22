@@ -1,6 +1,6 @@
 'use client';
 
-// Copied from calldella.com (src/app/operations/calculators.tsx), missed-call part only.
+// Copied from callmaren.com (src/app/operations/calculators.tsx), missed-call part only.
 // MissedCallSection writes the formula out in server HTML, so the method reads without JavaScript.
 import React, { useState } from 'react';
 

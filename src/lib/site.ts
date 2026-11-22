@@ -41,9 +41,9 @@ export const SITE = {
       ],
     },
     {
-      heading: 'Call Della',
+      heading: 'Call Maren',
       links: [
-        cd('/', 'calldella.com'),
+        cd('/', 'callmaren.com'),
         cd('/how-it-works', 'How it works'),
         cd('/pricing', 'Pricing'),
         cd('/personal-injury', 'Personal injury'),

@@ -31,7 +31,7 @@ const HUBS = ['/guides'];
 // Child pages of a hub, from the manifest plus the state and case-type data.
 const hubChildren = (path: string) => {
   if (!HUBS.includes(path)) return [];
-  return PAGES.filter((p) => p.path.startsWith(`${path}/`)).map((p) => ({ name: p.title.replace(/ \| Call Della$/, ''), path: p.path }));
+  return PAGES.filter((p) => p.path.startsWith(`${path}/`)).map((p) => ({ name: p.title.replace(/ \| Call Maren$/, ''), path: p.path }));
 };
 
 export const ArticleLayout = ({
@@ -87,7 +87,7 @@ export const ArticleLayout = ({
           </h1>
           <div className="flex flex-wrap gap-4 items-center border-y border-[var(--rule-soft)] py-3 mb-10 text-[11px] font-mono text-[var(--ink-soft)] uppercase tracking-[0.1em]">
             <span>
-              BY <a href={calldella('/about/andy-norman', (slug ?? 'article').replace(/^\//, '').replace(/\//g, '-'), 'byline')} className="no-underline hover:underline">{author}</a>, FOUNDER, CALL DELLA
+              BY <a href={calldella('/about/andy-norman', (slug ?? 'article').replace(/^\//, '').replace(/\//g, '-'), 'byline')} className="no-underline hover:underline">{author}</a>, FOUNDER, CALL MAREN
             </span>
             <span aria-hidden="true">·</span>
             <span>

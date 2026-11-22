@@ -32,15 +32,15 @@ export const ANTEK = {
 export const orgNode = (): Node => ({
   '@type': 'Organization',
   '@id': ORG_ID,
-  name: 'Call Della',
-  alternateName: 'Della',
+  name: 'Call Maren',
+  alternateName: 'Maren',
   url: CALLDELLA_URL,
   logo: { '@type': 'ImageObject', url: `${CALLDELLA_URL}/logo.png`, width: 512, height: 512 },
   image: `${CALLDELLA_URL}/og-default.png`,
   description: CATEGORY_DEFINITION,
   foundingDate: '2026',
   founder: { '@id': FOUNDER_ID },
-  // Call Della has no profiles of its own yet; entity trust comes via the parent brand.
+  // Call Maren has no profiles of its own yet; entity trust comes via the parent brand.
   parentOrganization: ANTEK,
   contactPoint: {
     '@type': 'ContactPoint',

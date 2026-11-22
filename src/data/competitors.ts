@@ -52,9 +52,9 @@ const spanishAreas = [
   FLAGS.spanishImmigration && 'immigration',
 ].filter(Boolean) as string[];
 
-// Call Della's column, built from plans.ts so a price change never leaves a stale page.
+// Call Maren's column, built from plans.ts so a price change never leaves a stale page.
 export const CALL_DELLA: Record<CriterionKey, string> = {
-  who: 'AI. Della is an AI intake specialist and tells callers so if asked',
+  who: 'AI. Maren is an AI intake specialist and tells callers so if asked',
   hours: 'Nights, weekends and holidays (after hours only)',
   price: `${formatPrice(solo)}/month (${solo.name}), ${formatPrice(practice)}/month (${practice.name}), ${group.name} custom`,
   volume: `${solo.minutes} minutes (${solo.name}), ${practice.minutes} minutes (${practice.name}), ${group.name} custom`,

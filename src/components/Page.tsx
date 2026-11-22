@@ -51,13 +51,13 @@ const HERO_DOSSIER = {
   timestamp: 'SAMPLE · TUESDAY · 9:42 PM',
   callerName: 'Test Caller A',
   duration: '6M 05S',
-  agentTag: 'DELLA',
+  agentTag: 'MAREN',
   matterLine: 'RE: REAR-END COLLISION · URGENCY 4 OF 5',
   quote: 'Neck and back pain, ER visit the same night. Other driver at fault, police report filed. Other driver’s insurer named. Callback number captured.',
   actionLine: 'Sample brief with a test caller. Call back first thing: treatment started, fault clear.',
 };
 
-// Same shape as calldella.com's HomeHero: copy left, sample dossier right, one column under md.
+// Same shape as callmaren.com's HomeHero: copy left, sample dossier right, one column under md.
 export const Hero = ({
   slug,
   eyebrow = 'After-hours intake specialist',
@@ -93,7 +93,7 @@ export const Hero = ({
             </a>
           </div>
           <p className="mt-4 !text-[12px] text-[var(--ink-soft)] font-mono tracking-[0.08em] !m-0 !mt-4">
-            {trust ?? `The demo takes ${DEMO_MINUTES} minutes: a live Della call for your practice area.`}
+            {trust ?? `The demo takes ${DEMO_MINUTES} minutes: a live Maren call for your practice area.`}
           </p>
           <p className="!text-[11px] text-[var(--ink-faint)] font-mono uppercase tracking-[0.1em] !m-0 !mt-2">
             Last updated <time dateTime={entry.dateModified}>{formatDate(entry.dateModified)}</time>
@@ -124,14 +124,14 @@ export const Source = ({ src }: { src: { name: string; url: string; publisher: s
   </>
 );
 
-export const ProblemFix = ({ rows, caption = 'How Della meets it' }: { rows: [string, string][]; caption?: string }) => (
+export const ProblemFix = ({ rows, caption = 'How Maren meets it' }: { rows: [string, string][]; caption?: string }) => (
   <div className="overflow-x-auto">
     <table>
       <caption className="sr-only">{caption}</caption>
       <thead>
         <tr>
           <th scope="col">If this is happening</th>
-          <th scope="col">What Della does</th>
+          <th scope="col">What Maren does</th>
         </tr>
       </thead>
       <tbody>
@@ -185,7 +185,7 @@ export const PlanTable = () => {
   );
 };
 
-export const SampleDossier = ({ heading = 'Hear Della take a call', children }: { heading?: string; children: React.ReactNode }) => (
+export const SampleDossier = ({ heading = 'Hear Maren take a call', children }: { heading?: string; children: React.ReactNode }) => (
   <section id="dossier" className="scroll-mt-24">
     <h2>{heading}</h2>
     {children}
@@ -200,13 +200,13 @@ export const DemoCTA = ({ children }: { children: React.ReactNode }) => (
   <aside className="my-14 border-[1.5px] border-[var(--rule)] bg-[var(--paper-edge)] p-6 md:p-8">
     <p>{children}</p>
     <p className="font-mono !text-[11px] uppercase tracking-[0.1em] text-[var(--ink-soft)]">
-      {DEMO_MINUTES} minutes · a live Della call for your practice area
+      {DEMO_MINUTES} minutes · a live Maren call for your practice area
     </p>
     <CTAButton primary>Book a demo</CTAButton>
   </aside>
 );
 
-// Shared missed-call section, mirroring calldella.com's MissedCallSection: the same calculator on
+// Shared missed-call section, mirroring callmaren.com's MissedCallSection: the same calculator on
 // every sales page. `matter` tunes the wording; `intro` adds a page-specific line; the formula never changes.
 export const MissedCallSection = ({
   slug,
@@ -231,7 +231,7 @@ export const MissedCallSection = ({
     <MissedCallCalculator example={example} />
     <p>
       For the method and what to count as a missed call, see the{' '}
-      <a href={calldella('/operations/missed-call-cost-calculator', campaign(slug), 'calculator')}>full missed-call cost calculator on calldella.com</a>.
+      <a href={calldella('/operations/missed-call-cost-calculator', campaign(slug), 'calculator')}>full missed-call cost calculator on callmaren.com</a>.
     </p>
   </section>
 );

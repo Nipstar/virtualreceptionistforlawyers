@@ -23,12 +23,12 @@ export const DEMO_MINUTES = 30;
 
 // Included on every plan.
 export const INCLUDES = [
-  "Della answering in your firm's name, nights, weekends and holidays",
-  'The Call Della dashboard: every call as a dossier with summary, urgency score, recording and transcript',
+  "Maren answering in your firm's name, nights, weekends and holidays",
+  'The Call Maren dashboard: every call as a dossier with summary, urgency score, recording and transcript',
   'Urgent-call email alerts to the attorney on call',
   'A morning brief by 7am in your time zone',
   'Recording disclosure set for your state',
-  'Your own Della number, with forwarding and a test call before you go live',
+  'Your own Maren number, with forwarding and a test call before you go live',
 ];
 
 export const GROUP_EXTRAS = ['Custom minutes, priced to your volume', 'More than one practice area', 'CRM webhook'];
@@ -45,7 +45,7 @@ export const FLAGS = {
 };
 
 export const CATEGORY_DEFINITION =
-  "Call Della is an after-hours intake specialist for law firms: personal injury, criminal defense and immigration. Della answers your firm's overnight phone, qualifies every caller, and delivers a triage-ready dossier by dawn.";
+  "Call Maren is an after-hours intake specialist for law firms: personal injury, criminal defense and immigration. Maren answers your firm's overnight phone, qualifies every caller, and delivers a triage-ready dossier by dawn.";
 
 export const planByID = (id: Plan['id']) => PLANS.find((p) => p.id === id)!;
 export const formatPrice = (p: Plan) => (p.price === null ? 'Custom' : `$${p.price}`);

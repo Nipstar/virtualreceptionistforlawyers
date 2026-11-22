@@ -21,8 +21,8 @@ const al = competitor('answering-legal');
 
 const faq = [
   { q: 'Is a cheap per-minute plan better for a small firm?', a: 'Only if your calls are short and few. A proper intake runs several minutes, so a low monthly fee with a per-minute rate can cost more than a flat plan once the calls are real. Count last month\'s after-hours calls, multiply by a realistic call length, and price each plan on that, not on the entry figure.' },
-  { q: 'Is there a setup fee or a contract?', a: `Not with Della. Every plan is month-to-month with no setup fee, and extra minutes are ${OVERAGE} each. Of the services compared here, ${al.name} publishes no setup fees and no long-term contracts, ${posh.name} and ${smith.name} publish month-to-month terms, and ${competitor('ruby').name} does not publish its contract length. Each fact is linked above.` },
-  { q: 'What does 24 hour legal answering service cost compared with after-hours only?', a: `A 24/7 service covers your office hours too, so you pay for daytime minutes your own staff could take. Della covers nights, weekends and holidays only, which is why ${formatPrice(SOLO)} buys ${SOLO.minutes} minutes of the calls you are actually missing. If you need daytime cover as well, price a 24/7 service on your full call count.` },
+  { q: 'Is there a setup fee or a contract?', a: `Not with Maren. Every plan is month-to-month with no setup fee, and extra minutes are ${OVERAGE} each. Of the services compared here, ${al.name} publishes no setup fees and no long-term contracts, ${posh.name} and ${smith.name} publish month-to-month terms, and ${competitor('ruby').name} does not publish its contract length. Each fact is linked above.` },
+  { q: 'What does 24 hour legal answering service cost compared with after-hours only?', a: `A 24/7 service covers your office hours too, so you pay for daytime minutes your own staff could take. Maren covers nights, weekends and holidays only, which is why ${formatPrice(SOLO)} buys ${SOLO.minutes} minutes of the calls you are actually missing. If you need daytime cover as well, price a 24/7 service on your full call count.` },
   OBJECTIONS.price,
   OBJECTIONS.person,
   OBJECTIONS.software,
@@ -36,7 +36,7 @@ export default function Cost() {
         h1="What a legal answering service costs in 2026"
         sub="Three pricing models, every published price checked and dated, and a missed-call sum you do yourself before you look at any of them."
         secondary={{ href: '#published-prices', label: 'See the prices' }}
-        trust="Competitor prices from their own sites, dated. No prices from memory. Della's price is at the end, after the sum."
+        trust="Competitor prices from their own sites, dated. No prices from memory. Maren's price is at the end, after the sum."
       />
 
       <h2>What does a legal answering service cost?</h2>
@@ -71,7 +71,7 @@ export default function Cost() {
         <li>If every after-hours caller arrived qualified at 7am, how many would you sign, and what is one of those worth?</li>
       </ul>
 
-      <h2>How Della meets it</h2>
+      <h2>How Maren meets it</h2>
       <ProblemFix
         rows={[
           ['Per-minute bills for messages', `One monthly fee with the dashboard, ${ALERTS} alerts and the morning brief included`],
@@ -87,7 +87,7 @@ export default function Cost() {
         rows={[
           ['Per minute', 'A monthly plan with a minute allowance, then a per-minute rate', 'A real intake runs several minutes, so the allowance goes fast. Check the overage rate and whether hold time counts'],
           ['Per call', 'A monthly plan with a call allowance, then a per-call rate', 'Short calls cost the same as long ones. Check what counts as a call: wrong numbers, hang-ups, existing clients'],
-          ['Flat monthly', 'One fee with minutes included and the features stated', 'Check what is included and what each extra minute costs. Della is priced this way'],
+          ['Flat monthly', 'One fee with minutes included and the features stated', 'Check what is included and what each extra minute costs. Maren is priced this way'],
         ]}
       />
 
@@ -127,8 +127,8 @@ export default function Cost() {
 
       <h2>Legal intake service pricing: what should be included?</h2>
       <Table
-        caption="What to expect in the fee, with Della's answers"
-        head={['Should be included', "Della's answer"]}
+        caption="What to expect in the fee, with Maren's answers"
+        head={['Should be included', "Maren's answer"]}
         rows={[
           ['An intake built for your practice area, not a message script', 'Yes, for personal injury, criminal defense and immigration'],
           ['Every call delivered as a file you can act on', 'A dossier per call: summary, urgency score, recording and transcript'],
@@ -148,11 +148,11 @@ export default function Cost() {
 
       <FAQ items={faq} heading="Questions about price" eyebrow="Objections, answered" />
 
-      <h2>What does Della cost?</h2>
+      <h2>What does Maren cost?</h2>
       <p>{PRICE_ANSWER}</p>
       <PlanTable />
       <p>
-        For the sum behind the price, calldella.com has a{' '}
+        For the sum behind the price, callmaren.com has a{' '}
         <a href={calldella('/operations/cost-per-signed-case-calculator', CAMPAIGN, 'body')}>cost per signed case calculator</a> and a{' '}
         <a href={calldella('/operations/after-hours-intake-comparison', CAMPAIGN, 'body')}>comparison of after-hours intake options</a>,
         including voicemail and in-house night staff.

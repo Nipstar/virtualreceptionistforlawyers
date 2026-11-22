@@ -12,8 +12,8 @@ export const metadata: Metadata = pageMeta('/24-7-answering-service');
 const SLUG = '/24-7-answering-service';
 
 const faq = [
-  { q: 'Does Della cover the daytime too?', a: "Della is an overnight specialist. She takes the calls your firm can't: nights, weekends, holidays, and any call you forward when nobody answers. Your team keeps the daytime phone. If you forward on no-answer, Della also catches the calls that ring out at lunch or while every line is busy, so nothing reaches voicemail." },
-  { q: 'How does an urgent call reach the attorney on call?', a: `Della scores every caller for urgency as the call ends. When a call is urgent, the attorney on call gets an ${ALERTS} alert straight away with the summary, so they can decide whether to call back that night. Everything else waits in the morning brief, sorted so the strongest cases sit at the top.` },
+  { q: 'Does Maren cover the daytime too?', a: "Maren is an overnight specialist. She takes the calls your firm can't: nights, weekends, holidays, and any call you forward when nobody answers. Your team keeps the daytime phone. If you forward on no-answer, Maren also catches the calls that ring out at lunch or while every line is busy, so nothing reaches voicemail." },
+  { q: 'How does an urgent call reach the attorney on call?', a: `Maren scores every caller for urgency as the call ends. When a call is urgent, the attorney on call gets an ${ALERTS} alert straight away with the summary, so they can decide whether to call back that night. Everything else waits in the morning brief, sorted so the strongest cases sit at the top.` },
   OBJECTIONS.price,
   OBJECTIONS.person,
   OBJECTIONS.bar,
@@ -26,7 +26,7 @@ export default function TwentyFourSeven() {
       <Hero
         slug={SLUG}
         h1="24/7 answering service for lawyers: nights, weekends and holidays"
-        sub="Della takes the overnight calls. Your team takes the morning. Every after-hours caller is answered in your firm's name, qualified and on your desk by dawn."
+        sub="Maren takes the overnight calls. Your team takes the morning. Every after-hours caller is answered in your firm's name, qualified and on your desk by dawn."
         trust="Built for legal intake from the first call. Never gives legal advice. Month-to-month."
       />
 
@@ -64,10 +64,10 @@ export default function TwentyFourSeven() {
       <p>
         A 24 hour legal answering service handles urgent calls by deciding, on the call, which ones can't wait, and getting those to a lawyer
         that night. That is harder than it sounds. A message-taking service treats every call the same, so a family calling about an arrest
-        sits in the same pile as a billing question. Della scores every caller for urgency from one to five as the intake runs. A call that
+        sits in the same pile as a billing question. Maren scores every caller for urgency from one to five as the intake runs. A call that
         scores as urgent goes to the attorney on call by {ALERTS} straight away, with the summary attached, so they can judge it in a minute
         rather than call back blind. The rest wait in the morning brief, sorted with the strongest cases first. You tell us who is on call
-        during setup. Della never tells a caller the firm has taken the case, and she never gives advice. She takes
+        during setup. Maren never tells a caller the firm has taken the case, and she never gives advice. She takes
         the facts and makes sure the right person sees them.
       </p>
 
@@ -82,7 +82,7 @@ export default function TwentyFourSeven() {
         <a href="/best-legal-answering-services">disclosed comparison</a>.
       </p>
 
-      <h2>How Della covers the 128 hours</h2>
+      <h2>How Maren covers the 128 hours</h2>
       <ProblemFix
         rows={[
           ['Calls go to voicemail at night', "Answers in your firm's name, every night, weekend and holiday"],
@@ -97,15 +97,15 @@ export default function TwentyFourSeven() {
         head={['Hours', 'Who answers']}
         rows={[
           ['Office hours, weekdays', 'Your team, as now'],
-          ['Weekday nights', 'Della'],
-          ['Weekends and holidays', 'Della'],
-          ['Daytime calls nobody picks up', 'Della, if you forward on no-answer'],
+          ['Weekday nights', 'Maren'],
+          ['Weekends and holidays', 'Maren'],
+          ['Daytime calls nobody picks up', 'Maren, if you forward on no-answer'],
         ]}
       />
       <p>
         See also the <a href="/legal-answering-service">legal answering service</a> page for the types of service, and{' '}
         <a href="/legal-intake-service">legal intake services</a> for what a full intake contains. The <a href="/">home page</a> covers why
-        Della takes the intake rather than a message.
+        Maren takes the intake rather than a message.
       </p>
 
       <SampleDossier>
@@ -117,7 +117,7 @@ export default function TwentyFourSeven() {
 
       <FAQ items={faq} heading="Questions about 24/7 answering" eyebrow="FAQ" />
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>
 

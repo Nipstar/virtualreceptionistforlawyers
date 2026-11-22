@@ -15,8 +15,8 @@ const SLUG = '/ai-receptionist';
 const CAMPAIGN = 'ai-receptionist';
 
 const faq = [
-  { q: 'Does Della tell callers she is an AI?', a: 'Yes, whenever a caller asks. She introduces herself by name, speaks calmly and asks one question at a time, and she never pretends to be a person. Every call is recorded, so you can hear exactly how each caller was treated before you decide anything.' },
-  { q: 'When is a person better than an AI receptionist?', a: 'For existing clients with questions about their case, for sensitive calls that need judgment, and for practice areas Della is not built for. Della takes new-client intake for personal injury, criminal defense and immigration after hours. For daytime reception across any practice area, a live service is the better choice, and the comparison page names them.' },
+  { q: 'Does Maren tell callers she is an AI?', a: 'Yes, whenever a caller asks. She introduces herself by name, speaks calmly and asks one question at a time, and she never pretends to be a person. Every call is recorded, so you can hear exactly how each caller was treated before you decide anything.' },
+  { q: 'When is a person better than an AI receptionist?', a: 'For existing clients with questions about their case, for sensitive calls that need judgment, and for practice areas Maren is not built for. Maren takes new-client intake for personal injury, criminal defense and immigration after hours. For daytime reception across any practice area, a live service is the better choice, and the comparison page names them.' },
   OBJECTIONS.person,
   OBJECTIONS.bar,
   OBJECTIONS.software,
@@ -29,14 +29,14 @@ export default function AiReceptionist() {
       <Hero
         slug={SLUG}
         h1="AI receptionist for law firms, built only for legal intake"
-        sub="Firms search for a receptionist. What the 9pm caller needs is intake. Della answers in your firm's name, takes the facts of the matter and has a dossier on your desk by dawn."
+        sub="Firms search for a receptionist. What the 9pm caller needs is intake. Maren answers in your firm's name, takes the facts of the matter and has a dossier on your desk by dawn."
         trust="Built for legal intake from the first call. Never gives legal advice. Tells callers she is an AI if asked."
       />
 
       <h2>What is an AI receptionist for law firms?</h2>
       <AnswerBlock>
         An AI receptionist for law firms is software that answers the phone in the firm&apos;s name and talks to the caller. Most take
-        a message. Della takes the intake: facts, urgency score, recording and transcript. In Clio&apos;s 2024 secret-shopper study only
+        a message. Maren takes the intake: facts, urgency score, recording and transcript. In Clio&apos;s 2024 secret-shopper study only
         40% of law firms answered a prospective client&apos;s call.
         <Source src={SRC.obj2025} />
       </AnswerBlock>
@@ -64,7 +64,7 @@ export default function AiReceptionist() {
         <li>What would you do with the hours your team spends returning calls that go nowhere?</li>
       </ul>
 
-      <h2>How Della meets it</h2>
+      <h2>How Maren meets it</h2>
       <ProblemFix
         rows={[
           ['Calls go to voicemail after hours', "Answers in your firm's name every night, weekend and holiday"],
@@ -75,8 +75,8 @@ export default function AiReceptionist() {
 
       <h2>What can an AI receptionist do on a legal call, and what can&apos;t it?</h2>
       <Table
-        caption="What Della does and does not do on a call"
-        head={['Della does', 'Della never does']}
+        caption="What Maren does and does not do on a call"
+        head={['Maren does', 'Maren never does']}
         rows={[
           ["Answers in your firm's name and introduces herself", 'Pretends she is not an AI when asked directly'],
           ['Asks the questions your practice area needs, one at a time', 'Gives legal advice'],
@@ -86,15 +86,15 @@ export default function AiReceptionist() {
       />
       <p>
         The line is the same one a good intake coordinator keeps: collect the facts, make no promises, get the right matter to the
-        right attorney fast. Della is a specialist, not a receptionist, which is why{' '}
+        right attorney fast. Maren is a specialist, not a receptionist, which is why{' '}
         <Link href="/">this site calls her a virtual receptionist for lawyers who takes the intake, not a message</Link>.
       </p>
 
       <h2>Does an AI receptionist for lawyers give legal advice?</h2>
       <p>
-        Della does not. She collects facts and never advises, never quotes fees, never runs your conflicts check and never tells a
+        Maren does not. She collects facts and never advises, never quotes fees, never runs your conflicts check and never tells a
         caller the firm has taken the case. Every call opens with a recording disclosure set for your state. The attorney reads the
-        dossier and decides. Call Della&apos;s guide to{' '}
+        dossier and decides. Call Maren&apos;s guide to{' '}
         <a href={calldella('/compliance/aba-formal-opinion-512-explained', CAMPAIGN, 'body')}>ABA Formal Opinion 512</a> covers the bar
         rules in detail.
       </p>
@@ -103,15 +103,15 @@ export default function AiReceptionist() {
       <p>
         Four things, and nothing else. Call data is encrypted in transit and at rest. Your firm owns every recording, transcript and
         dossier. Retention is set per firm, to your own file retention policy. Your callers&apos; recordings, transcripts and dossiers
-        are never used to train AI models. Call Della does not claim HIPAA compliance, because whether HIPAA applies to a firm&apos;s
+        are never used to train AI models. Call Maren does not claim HIPAA compliance, because whether HIPAA applies to a firm&apos;s
         intake call depends on the firm and the matter. The full statement is on{' '}
-        <a href={calldella('/security', CAMPAIGN, 'body')}>calldella.com/security</a>.
+        <a href={calldella('/security', CAMPAIGN, 'body')}>callmaren.com/security</a>.
       </p>
 
       <h2>AI answering service for lawyers: what to check before you sign</h2>
       <Table
-        caption="Checklist with Della's answers"
-        head={['Question to ask', "Della's answer"]}
+        caption="Checklist with Maren's answers"
+        head={['Question to ask', "Maren's answer"]}
         rows={[
           ['Does it say it is an AI when a caller asks?', 'Yes'],
           ['Is the intake built for our practice area, or generic?', 'Built for personal injury, criminal defense and immigration'],
@@ -136,7 +136,7 @@ export default function AiReceptionist() {
         <Link href="/best-legal-answering-services">the comparison of five services</Link>, including the live ones.
       </p>
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>
 

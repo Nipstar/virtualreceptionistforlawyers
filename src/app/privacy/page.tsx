@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       slug="/privacy"
       breadcrumbs={[{ name: 'Privacy Policy', href: '/privacy' }]}
-      author="Call Della Legal"
+      author="Call Maren Legal"
       date="1 MAY 2026"
       datePublished="2026-05-01"
       dateModified="2026-05-01"
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
     >
       <h2>1. Information We Collect</h2>
       <p>
-        Call Della collects information in two primary categories:
+        Call Maren collects information in two primary categories:
       </p>
       <h3>A. Customer Information</h3>
       <p>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
       </p>
       <h3>B. Caller Information</h3>
       <p>
-        Information provided by prospective clients who interact with the Call Della AI on behalf of our Customers. This includes:
+        Information provided by prospective clients who interact with the Call Maren AI on behalf of our Customers. This includes:
       </p>
       <ul>
         <li>Audio recordings of the intake call.</li>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
 
       <h2>2. How We Use the Information</h2>
       <p>
-        Call Della operates strictly as a data processor for the Caller Information. We use this data <strong>exclusively</strong> to:
+        Call Maren operates strictly as a data processor for the Caller Information. We use this data <strong>exclusively</strong> to:
       </p>
       <ul>
         <li>Facilitate the conversational intake.</li>
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
 
       <h2>3. Zero Data Retention for Model Training</h2>
       <p>
-        We recognize the absolute necessity of attorney-client privilege. <strong>Call Della strictly prohibits the use of Caller Information (audio, transcripts, or summaries) to train public Foundational LLMs.</strong> We utilize enterprise-grade API agreements with our sub-processors (such as OpenAI or Anthropic) that explicitly opt out of data retention for model training.
+        We recognize the absolute necessity of attorney-client privilege. <strong>Call Maren strictly prohibits the use of Caller Information (audio, transcripts, or summaries) to train public Foundational LLMs.</strong> We utilize enterprise-grade API agreements with our sub-processors (such as OpenAI or Anthropic) that explicitly opt out of data retention for model training.
       </p>
 
       <h2>4. Data Sharing and Disclosure</h2>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
 
       <h2>7. Data Deletion Requests</h2>
       <p>
-        Because Call Della acts as a data processor on behalf of the law firm, any requests from callers to delete their data must be directed to the respective law firm. We provide our Customers with the tooling necessary to permanently expunge records from our infrastructure upon request.
+        Because Call Maren acts as a data processor on behalf of the law firm, any requests from callers to delete their data must be directed to the respective law firm. We provide our Customers with the tooling necessary to permanently expunge records from our infrastructure upon request.
       </p>
     </ArticleLayout>
   );

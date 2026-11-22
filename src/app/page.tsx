@@ -14,12 +14,12 @@ const SLUG = '/';
 const C = campaign(SLUG);
 
 const faq = [
-  { q: 'Is Della a person?', a: "No. Della is an AI intake specialist. She introduces herself by name, works through your practice area's intake protocol, never gives legal advice, and tells any caller who asks that she's an AI. Callers hear a calm voice that asks one question at a time, and you can hear exactly what they heard in the recording." },
-  { q: 'How is this different from an answering service?', a: `An answering service usually takes a message. Della takes the intake and scores urgency, so you start the morning with a qualified case rather than a number to chase. Each call arrives as a dossier with a summary, the recording and the transcript, and anything urgent goes to the attorney on call by ${ALERTS} straight away.` },
+  { q: 'Is Maren a person?', a: "No. Maren is an AI intake specialist. She introduces herself by name, works through your practice area's intake protocol, never gives legal advice, and tells any caller who asks that she's an AI. Callers hear a calm voice that asks one question at a time, and you can hear exactly what they heard in the recording." },
+  { q: 'How is this different from an answering service?', a: `An answering service usually takes a message. Maren takes the intake and scores urgency, so you start the morning with a qualified case rather than a number to chase. Each call arrives as a dossier with a summary, the recording and the transcript, and anything urgent goes to the attorney on call by ${ALERTS} straight away.` },
   { q: 'What does it cost?', a: PRICE_ANSWER },
-  { q: 'Where does call data go?', a: "Every recording, transcript and dossier belongs to your firm and sits in your Call Della portal for the retention period you set. Call Della does not use your callers' recordings, transcripts or dossiers to train AI models. Call data is encrypted in transit and at rest, and the Call Della security page sets out the detail." },
-  { q: 'Is this allowed under bar rules?', a: "Della never gives legal advice, never quotes fees and never implies the firm has taken the case. She collects facts, and you decide what happens next. Every call opens with a recording disclosure set for your state. Call Della's compliance guides on calldella.com cover the detail, including ABA Formal Opinion 512 on lawyers' use of AI." },
-  { q: 'How do calls reach Della?', a: "You forward your office line to Della after hours, when nobody answers, or both. Your number doesn't change. Setup is short: answer a few questions about your practice, get your own Della number, make a test call, then switch on forwarding when you are ready to go live." },
+  { q: 'Where does call data go?', a: "Every recording, transcript and dossier belongs to your firm and sits in your Call Maren portal for the retention period you set. Call Maren does not use your callers' recordings, transcripts or dossiers to train AI models. Call data is encrypted in transit and at rest, and the Call Maren security page sets out the detail." },
+  { q: 'Is this allowed under bar rules?', a: "Maren never gives legal advice, never quotes fees and never implies the firm has taken the case. She collects facts, and you decide what happens next. Every call opens with a recording disclosure set for your state. Call Maren's compliance guides on callmaren.com cover the detail, including ABA Formal Opinion 512 on lawyers' use of AI." },
+  { q: 'How do calls reach Maren?', a: "You forward your office line to Maren after hours, when nobody answers, or both. Your number doesn't change. Setup is short: answer a few questions about your practice, get your own Maren number, make a test call, then switch on forwarding when you are ready to go live." },
 ];
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       <Hero
         slug={SLUG}
         h1="A virtual receptionist for lawyers that takes the intake, not a message"
-        sub="Della answers your firm's calls at night and at weekends, qualifies every caller and has a triage-ready dossier on your desk by dawn."
+        sub="Maren answers your firm's calls at night and at weekends, qualifies every caller and has a triage-ready dossier on your desk by dawn."
         trust="Built for legal intake from the first call. Never gives legal advice. Month-to-month."
       />
 
@@ -49,8 +49,8 @@ export default function Home() {
         specialist answers the question you ask the next morning: is there a case here, and how soon do I need to call back?
       </p>
       <p>
-        Della is an AI intake specialist, built for personal injury, criminal defense and immigration calls. She works through the full intake
-        every time, and doesn't have off nights. If you searched for a live virtual receptionist, the plain answer is that Della is not a
+        Maren is an AI intake specialist, built for personal injury, criminal defense and immigration calls. She works through the full intake
+        every time, and doesn't have off nights. If you searched for a live virtual receptionist, the plain answer is that Maren is not a
         person, and she tells any caller who asks. A live receptionist at a call center is the better fit when most of your calls need
         judgment no intake protocol can supply, such as complex commercial matters.
       </p>
@@ -79,7 +79,7 @@ export default function Home() {
         <li>What would you do with the time you now spend returning cold voicemails?</li>
       </ul>
 
-      <h2>How Della works for your firm</h2>
+      <h2>How Maren works for your firm</h2>
       <ProblemFix
         rows={[
           ['Calls go unanswered after hours', "Answers in your firm's name, every night and weekend"],
@@ -89,12 +89,12 @@ export default function Home() {
           ['The phone follows you home', 'Takes the overnight shift, so you start the day with a sorted list'],
         ]}
       />
-      <p>If you have an intake team, Della covers the hours they aren't there. If it's just you, she covers the hours you can't.</p>
+      <p>If you have an intake team, Maren covers the hours they aren't there. If it's just you, she covers the hours you can't.</p>
       <p>
         <strong>Practice areas.</strong> For personal injury firms, injury intake has its own site at{' '}
         <a href="https://personalinjuryansweringservice.com/">personalinjuryansweringservice.com</a>. For criminal defense and immigration, see{' '}
-        <a href={calldella('/criminal-defense', C, 'practice-areas')}>Della for criminal defense</a> and{' '}
-        <a href={calldella('/immigration', C, 'practice-areas')}>Della for immigration</a> on calldella.com.
+        <a href={calldella('/criminal-defense', C, 'practice-areas')}>Maren for criminal defense</a> and{' '}
+        <a href={calldella('/immigration', C, 'practice-areas')}>Maren for immigration</a> on callmaren.com.
       </p>
 
       <h2>Where should you read next?</h2>
@@ -111,13 +111,13 @@ export default function Home() {
       <SampleDossier>
         <p>
           Book a {DEMO_MINUTES}-minute demo and we'll run a live new-client call for your practice area while you listen. You'll hear exactly
-          what your callers would hear. Below is a sample brief from a test caller, the kind of dossier Della files after every call.
+          what your callers would hear. Below is a sample brief from a test caller, the kind of dossier Maren files after every call.
         </p>
       </SampleDossier>
 
       <FAQ items={faq} heading="Questions lawyers ask" eyebrow="FAQ" />
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <p>What you get on each plan:</p>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>

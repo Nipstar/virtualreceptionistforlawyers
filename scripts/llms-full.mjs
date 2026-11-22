@@ -42,7 +42,7 @@ const pages = htmlFiles(OUT)
   .sort((a, b) => a.path.localeCompare(b.path));
 
 const body =
-  `# Call Della: full site text\n\nGenerated at build from ${pages.length} pages. Source: ${SITE}\n\n` +
+  `# Call Maren: full site text\n\nGenerated at build from ${pages.length} pages. Source: ${SITE}\n\n` +
   pages.map((p) => `---\n\n# ${p.title}\nURL: ${SITE}${p.path === '/' ? '' : p.path}\n\n${p.text}\n`).join('\n');
 
 writeFileSync(join(OUT, 'llms-full.txt'), body);

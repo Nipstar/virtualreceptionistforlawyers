@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMeta('/legal-intake-service');
 
 const SLUG = '/legal-intake-service';
 
-// What Della captures on a personal injury intake, from calldella.com's vertical configuration.
+// What Maren captures on a personal injury intake, from callmaren.com's vertical configuration.
 const PI_FIELDS = [
   'Incident type, date, time and place',
   'State and statute of limitations exposure',
@@ -25,8 +25,8 @@ const PI_FIELDS = [
 ];
 
 const faq = [
-  { q: 'If we outsource legal intake, do we lose control of which cases we take?', a: 'No. An intake service collects and screens; the firm decides. Della asks the questions your practice area needs, scores urgency and files the facts. Whether to call back, run a conflicts check or sign the client stays with the attorney. You set what counts as urgent, and you can hear every recording.' },
-  { q: 'Do legal intake phone services cover daytime calls?', a: 'Many do, and if your team cannot take the first call at 11am, look at a service that covers business hours. Della covers nights, weekends and holidays only: your team takes the morning. If you need day and night from one vendor, the comparison page names the live services that publish 24/7 coverage.' },
+  { q: 'If we outsource legal intake, do we lose control of which cases we take?', a: 'No. An intake service collects and screens; the firm decides. Maren asks the questions your practice area needs, scores urgency and files the facts. Whether to call back, run a conflicts check or sign the client stays with the attorney. You set what counts as urgent, and you can hear every recording.' },
+  { q: 'Do legal intake phone services cover daytime calls?', a: 'Many do, and if your team cannot take the first call at 11am, look at a service that covers business hours. Maren covers nights, weekends and holidays only: your team takes the morning. If you need day and night from one vendor, the comparison page names the live services that publish 24/7 coverage.' },
   OBJECTIONS.person,
   OBJECTIONS.bar,
   OBJECTIONS.software,
@@ -39,7 +39,7 @@ export default function LegalIntakeService() {
       <Hero
         slug={SLUG}
         h1="Legal intake services for the calls your team can't take"
-        sub="When the first call comes in after hours, Della takes the intake for your practice area and leaves a screened matter on your desk by dawn, not a name and a number."
+        sub="When the first call comes in after hours, Maren takes the intake for your practice area and leaves a screened matter on your desk by dawn, not a name and a number."
         trust="Built for legal intake from the first call. Never gives legal advice. Month-to-month."
       />
 
@@ -75,7 +75,7 @@ export default function LegalIntakeService() {
         <li>What would the intake coordinator do with the mornings that no longer start with a backlog of voicemails?</li>
       </ul>
 
-      <h2>How Della meets it</h2>
+      <h2>How Maren meets it</h2>
       <ProblemFix
         rows={[
           ['New callers reach voicemail', "Answers in your firm's name every night, weekend and holiday"],
@@ -92,7 +92,7 @@ export default function LegalIntakeService() {
         rows={[
           ['Message-taking answering service', 'A name, a number and a short message', 'Every callback starts from nothing'],
           ['Answering service with legal intake', 'A short screening script, the same for every practice area', 'Thin on the facts a case needs; urgent calls often wait'],
-          ['Legal intake service built for the practice (Della)', 'A full intake, an urgency score, the recording and transcript, by 7am', 'After hours only; your team takes the day'],
+          ['Legal intake service built for the practice (Maren)', 'A full intake, an urgency score, the recording and transcript, by 7am', 'After hours only; your team takes the day'],
         ]}
       />
       <p>
@@ -103,7 +103,7 @@ export default function LegalIntakeService() {
       <h2>What does a qualified intake contain?</h2>
       <p>
         Enough for the attorney to decide whether to call back first, and enough for the paralegal to open the file without a second
-        call. On a personal injury call Della captures:
+        call. On a personal injury call Maren captures:
       </p>
       <ul>
         {PI_FIELDS.map((f) => (
@@ -118,15 +118,15 @@ export default function LegalIntakeService() {
 
       <h2>What stays with the firm?</h2>
       <p>
-        The decisions. Della collects facts and scores urgency; she never gives legal advice, quotes fees, runs your conflicts check or
+        The decisions. Maren collects facts and scores urgency; she never gives legal advice, quotes fees, runs your conflicts check or
         tells a caller the firm has taken the case. The attorney reads the dossier, decides, and makes the call that signs the client.
         Outsourcing legal intake should move the first ten minutes of every matter off your desk, not the judgment.
       </p>
 
       <h2>Outsource legal intake: what to ask a legal intake company before you sign</h2>
       <Table
-        caption="Checklist with Della's answers"
-        head={['Question to ask', "Della's answer"]}
+        caption="Checklist with Maren's answers"
+        head={['Question to ask', "Maren's answer"]}
         rows={[
           ['Is the intake script built for our practice area, or generic?', 'Built for personal injury, criminal defense and immigration'],
           ['What reaches us in the morning?', 'A dossier per call: summary, urgency score, recording and transcript, by 7am'],
@@ -151,7 +151,7 @@ export default function LegalIntakeService() {
         <Link href="/cost">what a legal answering service costs</Link>.
       </p>
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>
 

@@ -23,8 +23,8 @@ const scope: [string, string][] = [
 ];
 
 const faq = [
-  { q: 'Do you take personal injury or criminal defense calls in Spanish?', a: `Not today. Della takes ${spanish} intake in English or Spanish. Personal injury and criminal defense callers are taken in English, and this page will say so the day that changes. If most of your night callers are Spanish speakers in those practice areas, a live bilingual service is the better fit for now, and the comparison below names them.` },
-  { q: 'Which hours is Spanish available?', a: `The same hours as English: nights, weekends and holidays. There is no separate Spanish line and no window when Spanish callers get a different service. Della answers every after-hours call in your firm's name and takes ${spanish} intake in whichever language the caller uses.` },
+  { q: 'Do you take personal injury or criminal defense calls in Spanish?', a: `Not today. Maren takes ${spanish} intake in English or Spanish. Personal injury and criminal defense callers are taken in English, and this page will say so the day that changes. If most of your night callers are Spanish speakers in those practice areas, a live bilingual service is the better fit for now, and the comparison below names them.` },
+  { q: 'Which hours is Spanish available?', a: `The same hours as English: nights, weekends and holidays. There is no separate Spanish line and no window when Spanish callers get a different service. Maren answers every after-hours call in your firm's name and takes ${spanish} intake in whichever language the caller uses.` },
   OBJECTIONS.person,
   OBJECTIONS.bar,
   OBJECTIONS.software,
@@ -37,14 +37,14 @@ export default function BilingualAnsweringService() {
       <Hero
         slug={SLUG}
         h1="Bilingual legal answering service, English and Spanish"
-        sub="When a Spanish speaker calls your firm at night, Della takes the immigration intake in Spanish and has the dossier on your desk by dawn. The honest scope is on this page."
+        sub="When a Spanish speaker calls your firm at night, Maren takes the immigration intake in Spanish and has the dossier on your desk by dawn. The honest scope is on this page."
         trust={`Spanish on ${spanish} intake today. Never gives legal advice. Month-to-month.`}
       />
 
       <h2>What is a bilingual legal answering service?</h2>
       <AnswerBlock>
         A bilingual legal answering service answers a law firm&apos;s calls in English and Spanish and takes the caller&apos;s details
-        in either. Most take a message. Della takes the {spanish} intake in either language after hours. In Clio&apos;s 2024
+        in either. Most take a message. Maren takes the {spanish} intake in either language after hours. In Clio&apos;s 2024
         secret-shopper study only 40% of law firms answered a prospective client&apos;s call.<Source src={SRC.obj2025} />
       </AnswerBlock>
 
@@ -71,7 +71,7 @@ export default function BilingualAnsweringService() {
         <li>Who on your team gets their evenings back?</li>
       </ul>
 
-      <h2>How Della meets it</h2>
+      <h2>How Maren meets it</h2>
       <ProblemFix
         rows={[
           ['Spanish speakers reach an English voicemail', `Takes ${spanish} intake in English or Spanish, every night, weekend and holiday`],
@@ -80,8 +80,8 @@ export default function BilingualAnsweringService() {
         ]}
       />
 
-      <h2>Which practice areas does Della take in Spanish?</h2>
-      <Table caption="Spanish scope by practice area" head={['Practice area', 'Languages Della takes intake in']} rows={scope} />
+      <h2>Which practice areas does Maren take in Spanish?</h2>
+      <Table caption="Spanish scope by practice area" head={['Practice area', 'Languages Maren takes intake in']} rows={scope} />
       <p>
         That is the whole scope, and this page changes the day it does. Firms outside {spanish} that need Spanish on every call are
         better served by a live bilingual service for now, and the next section shows what each publishes.
@@ -96,7 +96,7 @@ export default function BilingualAnsweringService() {
         caption="Spanish coverage as published by each service"
         head={['Service', 'Spanish, as published']}
         rows={[
-          ['Call Della', `Spanish on ${spanish} intake, nights, weekends and holidays`],
+          ['Call Maren', `Spanish on ${spanish} intake, nights, weekends and holidays`],
           ...COMPETITORS.map((c) => [
             c.name,
             <>
@@ -120,7 +120,7 @@ export default function BilingualAnsweringService() {
 
       <FAQ items={faq} heading="Questions about Spanish callers" eyebrow="Objections, answered" />
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>
 

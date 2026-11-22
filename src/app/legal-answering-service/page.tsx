@@ -13,11 +13,11 @@ const SLUG = '/legal-answering-service';
 const PLANS_SHORT = `${formatPrice(SOLO)} for ${SOLO.minutes} minutes or ${formatPrice(PRACTICE)} for ${PRACTICE.minutes}`;
 
 const faq = [
-  { q: 'How much does a legal answering service cost?', a: `It depends on the model: per minute, per call, or a flat monthly fee. Della is ${formatPrice(SOLO)} a month with ${SOLO.minutes} minutes or ${formatPrice(PRACTICE)} with ${PRACTICE.minutes}, both with the dashboard, urgent-call alerts and the morning brief included, and extra minutes are ${OVERAGE}. The cost guide compares the models in detail.` },
-  { q: 'Is a legal answering service available 24/7?', a: `Most are. The better question is what happens at 2am: who answers, what they ask, and how an urgent call reaches an attorney. Della answers every after-hours call, takes the full intake and alerts the attorney on call to anything urgent by ${ALERTS}, straight away.` },
-  { q: 'Does Della give legal advice?', a: "No. Della collects facts and never advises, quotes fees or implies the firm has taken the case. You decide what happens next. She is an intake specialist, not a lawyer, and every call opens with a recording disclosure set for your state. Call Della's compliance guides cover the bar rules in detail." },
-  { q: 'Do you answer in Spanish?', a: `Yes, natively, on ${SPANISH_AREAS.join(' and ')} intake: Della takes the call in English or Spanish and files the dossier for your team. Other practice areas are taken in English today, and this site will say so when that changes. The bilingual answering service page sets out the scope.` },
-  { q: 'We already have an answering service. Why change?', a: 'Most answering services take a message. Della takes the intake: what happened, when, the facts your practice area needs, and an urgency score on top. Put your current service and a Della demo side by side, and compare what would reach your desk the next morning from each.' },
+  { q: 'How much does a legal answering service cost?', a: `It depends on the model: per minute, per call, or a flat monthly fee. Maren is ${formatPrice(SOLO)} a month with ${SOLO.minutes} minutes or ${formatPrice(PRACTICE)} with ${PRACTICE.minutes}, both with the dashboard, urgent-call alerts and the morning brief included, and extra minutes are ${OVERAGE}. The cost guide compares the models in detail.` },
+  { q: 'Is a legal answering service available 24/7?', a: `Most are. The better question is what happens at 2am: who answers, what they ask, and how an urgent call reaches an attorney. Maren answers every after-hours call, takes the full intake and alerts the attorney on call to anything urgent by ${ALERTS}, straight away.` },
+  { q: 'Does Maren give legal advice?', a: "No. Maren collects facts and never advises, quotes fees or implies the firm has taken the case. You decide what happens next. She is an intake specialist, not a lawyer, and every call opens with a recording disclosure set for your state. Call Maren's compliance guides cover the bar rules in detail." },
+  { q: 'Do you answer in Spanish?', a: `Yes, natively, on ${SPANISH_AREAS.join(' and ')} intake: Maren takes the call in English or Spanish and files the dossier for your team. Other practice areas are taken in English today, and this site will say so when that changes. The bilingual answering service page sets out the scope.` },
+  { q: 'We already have an answering service. Why change?', a: 'Most answering services take a message. Maren takes the intake: what happened, when, the facts your practice area needs, and an urgency score on top. Put your current service and a Maren demo side by side, and compare what would reach your desk the next morning from each.' },
 ];
 
 export default function LegalAnsweringService() {
@@ -26,7 +26,7 @@ export default function LegalAnsweringService() {
       <Hero
         slug={SLUG}
         h1="Legal answering service built for intake, not messages"
-        sub="When your office closes, Della answers in your firm's name, works through the intake and leaves you a qualified case by morning, not a number to call back."
+        sub="When your office closes, Maren answers in your firm's name, works through the intake and leaves you a qualified case by morning, not a number to call back."
         secondary={{ href: '/best-legal-answering-services', label: 'Compare the options' }}
         trust="Built for legal intake from the first call. Never gives legal advice. Month-to-month."
       />
@@ -34,7 +34,7 @@ export default function LegalAnsweringService() {
       <h2>What is a legal answering service?</h2>
       <AnswerBlock>
         A legal answering service answers a law firm's calls when the firm can't: after hours, at lunch, or when every line is busy. Most take
-        messages. Legal intake services also screen the caller, capture the facts of the matter and route urgent calls to an attorney. Della
+        messages. Legal intake services also screen the caller, capture the facts of the matter and route urgent calls to an attorney. Maren
         is the second kind, an AI intake specialist rather than a call center.
       </AnswerBlock>
       <p>
@@ -49,7 +49,7 @@ export default function LegalAnsweringService() {
         rows={[
           ['Message-taking answering service', 'A name, a number and a short message', 'Per minute or per call'],
           ['Legal intake service with live staff', 'A screened intake, scripted per practice area', 'Per call or monthly'],
-          ['AI intake specialist (Della)', 'A full intake, an urgency score, the recording and transcript, by dawn', 'Flat monthly fee with minutes included'],
+          ['AI intake specialist (Maren)', 'A full intake, an urgency score, the recording and transcript, by dawn', 'Flat monthly fee with minutes included'],
         ]}
       />
       <p>
@@ -80,7 +80,7 @@ export default function LegalAnsweringService() {
         <li>How many more cases would you take if the strong ones reached you while the caller was still deciding?</li>
       </ul>
 
-      <h2>How Della meets it</h2>
+      <h2>How Maren meets it</h2>
       <ProblemFix
         rows={[
           ['You get messages, not cases', 'Works through the intake for your practice area on every call'],
@@ -90,14 +90,14 @@ export default function LegalAnsweringService() {
         ]}
       />
       <p>
-        Della also covers <a href="/24-7-answering-service">nights, weekends and holidays</a>, and the <a href="/">home page</a> explains why
+        Maren also covers <a href="/24-7-answering-service">nights, weekends and holidays</a>, and the <a href="/">home page</a> explains why
         she takes the intake rather than a message.
       </p>
 
       <h2>Answering service for lawyers: what to check before you sign</h2>
       <Table
-        caption="Checklist with Della's answers"
-        head={['Question to ask', "Della's answer"]}
+        caption="Checklist with Maren's answers"
+        head={['Question to ask', "Maren's answer"]}
         rows={[
           ["Does it answer in your firm's name?", 'Yes'],
           ['Does it take a full intake, or a message?', 'A full intake'],
@@ -119,7 +119,7 @@ export default function LegalAnsweringService() {
         <a href="/bilingual-answering-service">bilingual answering service</a> page.
       </p>
 
-      <h2>Hire Della</h2>
+      <h2>Hire Maren</h2>
       <PlanTable />
       <CTAButton primary large>Book a demo</CTAButton>
 

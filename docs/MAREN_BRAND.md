@@ -1,22 +1,22 @@
-# Della — Brand Identity
+# Maren — Brand Identity
 
-> **Domain:** calldella.com
-> **Product:** Call Della — an after-hours intake specialist for personal injury law firms.
-> **The persona:** Della. The voice on the other end of the line when the firm has gone home.
+> **Domain:** callmaren.com
+> **Product:** Call Maren — an after-hours intake specialist for personal injury law firms.
+> **The persona:** Maren. The voice on the other end of the line when the firm has gone home.
 
 ---
 
 ## 1. Brand essence
 
-**Call Della is a staffing service, not a software product.** Every PI firm we serve hires Della to cover the hours their intake team isn't there. By morning, the firm finds a complete dossier of every overnight caller — qualified, classified by urgency, ready for action.
+**Call Maren is a staffing service, not a software product.** Every PI firm we serve hires Maren to cover the hours their intake team isn't there. By morning, the firm finds a complete dossier of every overnight caller — qualified, classified by urgency, ready for action.
 
 We sell a specialist, not a tool. That distinction governs every decision: how we name pages, how we price, how we write copy, how we present in sales calls.
 
 ---
 
-## 2. Who Della is (the persona)
+## 2. Who Maren is (the persona)
 
-**One sentence:** Della is the calm, capable intake specialist who answers when your firm has closed for the night.
+**One sentence:** Maren is the calm, capable intake specialist who answers when your firm has closed for the night.
 
 **Personality:**
 - Composed under pressure (PI callers are often shaken)
@@ -26,28 +26,28 @@ We sell a specialist, not a tool. That distinction governs every decision: how w
 - Reassures without overpromising
 - Knows when to escalate
 
-**What Della does:**
+**What Maren does:**
 - Answers every after-hours call within two rings
-- Identifies herself: *"Hello, this is Della from [Firm Name]. The office is closed, but I can take your details and make sure someone calls you back first thing."*
+- Identifies herself: *"Hello, this is Maren from [Firm Name]. The office is closed, but I can take your details and make sure someone calls you back first thing."*
 - Qualifies the caller: incident type, date, jurisdiction, injury, fault, insurance contact, prior counsel, statute-of-limitations risk
 - Captures contact details and best callback window
 - Reassures without committing the firm to anything
 - Logs the call, generates a dossier, classifies urgency
 
-**What Della never does:**
+**What Maren never does:**
 - Pretend she isn't an AI when asked directly
 - Quote fees or commit the firm to representation
 - Give legal advice
 - Argue with callers
 - Pressure for retainer signatures
 
-**What gives Della authority on the phone:** she's been trained specifically on PI intake — she knows what "MMI" means, she knows why the police report number matters, she knows that a slip-and-fall in a federal building is a different jurisdiction than one across the street. That domain depth is why firms hire her instead of a generic AI receptionist.
+**What gives Maren authority on the phone:** she's been trained specifically on PI intake — she knows what "MMI" means, she knows why the police report number matters, she knows that a slip-and-fall in a federal building is a different jurisdiction than one across the street. That domain depth is why firms hire her instead of a generic AI receptionist.
 
 ---
 
 ## 3. Positioning statement
 
-> For mid-size personal injury law firms losing high-value cases to missed after-hours calls, **Call Della is an overnight intake specialist** that qualifies every caller and delivers a triage-ready dossier by 7am. Unlike generic AI receptionists that take messages, Della was built for PI intake from the first call — and unlike human answering services, she costs a fraction and never has an off night.
+> For mid-size personal injury law firms losing high-value cases to missed after-hours calls, **Call Maren is an overnight intake specialist** that qualifies every caller and delivers a triage-ready dossier by 7am. Unlike generic AI receptionists that take messages, Maren was built for PI intake from the first call — and unlike human answering services, she costs a fraction and never has an off night.
 
 **Three positioning levers:**
 
@@ -81,7 +81,7 @@ We sell a specialist, not a tool. That distinction governs every decision: how w
 - Looking foolish to peers
 - Being locked into a long contract
 
-**Influencer (gatekeeper):** Intake manager / firm administrator. Will recommend against Call Della if it threatens their role. The pitch must be augmentation, not replacement.
+**Influencer (gatekeeper):** Intake manager / firm administrator. Will recommend against Call Maren if it threatens their role. The pitch must be augmentation, not replacement.
 
 ---
 
@@ -98,12 +98,12 @@ We sell a specialist, not a tool. That distinction governs every decision: how w
 - *Marketing site:* measured, authoritative, slightly understated
 - *In-product:* clear, calm, almost clerical
 - *Sales emails:* direct, brief, respectful of the partner's time
-- *Della on the phone:* warm, capable, attentive
+- *Maren on the phone:* warm, capable, attentive
 
 **Voice rules:**
 
 ✅ Do say:
-- "Della handled 41 calls last night. Three need callbacks by noon."
+- "Maren handled 41 calls last night. Three need callbacks by noon."
 - "Built for personal injury intake from the first call."
 - "Every after-hours caller, on your desk by dawn."
 - "The morning brief, written while you slept."
@@ -122,7 +122,7 @@ We sell a specialist, not a tool. That distinction governs every decision: how w
 ## 6. Tagline system
 
 **Primary tagline:**
-> Della takes the overnight calls. Your team takes the morning.
+> Maren takes the overnight calls. Your team takes the morning.
 
 **Secondary taglines (use sparingly, in different contexts):**
 - An after-hours intake specialist for personal injury firms.
@@ -132,15 +132,15 @@ We sell a specialist, not a tool. That distinction governs every decision: how w
 - The intake specialist your firm hires for the hours your team isn't there.
 
 **Action call:**
-- "Hire Della" (sign-up CTA — frames as a hiring decision, not a software purchase)
-- "Hear Della" (audio sample CTA)
+- "Hire Maren" (sign-up CTA — frames as a hiring decision, not a software purchase)
+- "Hear Maren" (audio sample CTA)
 - "See the dossier" (product preview CTA)
 
 ---
 
 ## 7. Visual identity
 
-**Reference:** identical to the Call Della platform (the dossier portal). The landing page should feel like a continuation of the same world — same paper, same ink, same stamps.
+**Reference:** identical to the Call Maren platform (the dossier portal). The landing page should feel like a continuation of the same world — same paper, same ink, same stamps.
 
 ### Type
 - **Display & body:** Newsreader (variable, Google Fonts)
@@ -190,7 +190,7 @@ Subtle SVG noise overlay at 2.5% opacity, multiply blend mode. Sells the "paper"
 
 ### Logo / wordmark
 - Set in **Newsreader 600**, letter-spacing `-0.025em`
-- Lowercase: **call della**
+- Lowercase: **call maren**
 - Optional: small mono date stamp underneath: `EST. 2026 · LEGAL INTAKE`
 - No icon mark required. The wordmark is enough.
 
@@ -213,12 +213,12 @@ Subtle SVG noise overlay at 2.5% opacity, multiply blend mode. Sells the "paper"
 
 | Thing | Name | Notes |
 |---|---|---|
-| The company | **Call Della** | Always title case |
-| The agent persona | **Della** | First name only |
-| The platform | **the Call Della platform** | Lowercase 'the', when in flowing text |
+| The company | **Call Maren** | Always title case |
+| The agent persona | **Maren** | First name only |
+| The platform | **the Call Maren platform** | Lowercase 'the', when in flowing text |
 | The morning output | **the dossier** or **the brief** | Either works; "dossier" for product copy, "brief" for warmer marketing copy |
 | The portal subdomain | `app.calldella.com` | Where firm admins log in |
-| The marketing site | `calldella.com` | Apex domain |
+| The marketing site | `callmaren.com` | Apex domain |
 | Andy's role | Founder | Not "CEO." Smaller and more credible. |
 
 ---
@@ -236,15 +236,15 @@ Current plans (confirmed 25 Oct 2026):
 - **Group** — custom minutes, more than one practice area, CRM webhook
 - Overage $0.50/min. Month-to-month, no setup fee.
 
-Always show prices on the website. Never show live demo phone numbers: the primary CTA is Book a demo, where we run a live Della call for the prospect. Hiding behind "request a demo" cedes the trust ground to competitors who do show their numbers.
+Always show prices on the website. Never show live demo phone numbers: the primary CTA is Book a demo, where we run a live Maren call for the prospect. Hiding behind "request a demo" cedes the trust ground to competitors who do show their numbers.
 
 ---
 
 ## 10. Things to never do
 
-1. Never refer to Della as "it" or "the AI" in marketing copy. Always "Della" or "she."
+1. Never refer to Maren as "it" or "the AI" in marketing copy. Always "Maren" or "she."
 2. Never use the word "leverage."
-3. Never claim Della is "indistinguishable from a human."
+3. Never claim Maren is "indistinguishable from a human."
 4. Never publish a customer testimonial without explicit written approval.
 5. Never make a guarantee about case outcomes or signing rates.
 6. Never use stock imagery of judges, gavels, scales, or columns.

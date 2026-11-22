@@ -3,7 +3,7 @@
 import { readFileSync } from 'node:fs';
 
 const KEY = 'eca315b36833fa78d3c0ab1a15976472'; // public/eca315b36833fa78d3c0ab1a15976472.txt must be served at the site root
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://calldella.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://callmaren.com';
 const host = new URL(SITE).host;
 const urlList = [...readFileSync('out/sitemap.xml', 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 

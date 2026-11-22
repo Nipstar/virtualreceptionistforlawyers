@@ -4,20 +4,20 @@ import { CRITERIA, CALL_DELLA, FETCHED, type Competitor } from '@/data/competito
 import { formatDate } from '@/data/pages';
 import { DEMO_MINUTES } from '@/lib/plans';
 
-// Call Della against one or more competitors on the same criteria. Full column width on desktop
+// Call Maren against one or more competitors on the same criteria. Full column width on desktop
 // (col-wide, see globals.css); scrolls inside its own box on narrow screens with the criterion column pinned.
 export const CompareTable = ({ competitors, caption }: { competitors: Competitor[]; caption: string }) => (
   <div className="not-prose my-8 col-wide">
     <div className="overflow-x-auto border-[1.5px] border-[var(--rule)]">
       <table className={`compare-stack w-full ${competitors.length > 1 ? 'min-w-[960px]' : 'min-w-[560px]'} border-collapse text-left font-serif text-[14.5px] leading-[1.45] text-[var(--ink)]`}>
         <caption className="caption-bottom px-3 py-3 text-left font-mono text-[11px] tracking-[0.06em] text-[var(--ink-soft)]">
-          {caption} Competitor facts as of {formatDate(FETCHED)}, each from the linked page on the competitor&apos;s own site. Call Della
+          {caption} Competitor facts as of {formatDate(FETCHED)}, each from the linked page on the competitor&apos;s own site. Call Maren
           wrote this table.
         </caption>
         <thead>
           <tr className="bg-[var(--paper-edge)]">
             <th scope="col" className="sticky left-0 bg-[var(--paper-edge)] p-3 font-mono text-[11px] uppercase tracking-[0.1em] align-bottom min-w-[150px]">Criterion</th>
-            <th scope="col" className="p-3 font-mono text-[11px] uppercase tracking-[0.1em] align-bottom">Call Della</th>
+            <th scope="col" className="p-3 font-mono text-[11px] uppercase tracking-[0.1em] align-bottom">Call Maren</th>
             {competitors.map((c) => (
               <th key={c.slug} scope="col" className="p-3 font-mono text-[11px] uppercase tracking-[0.1em] align-bottom">
                 {c.name}
@@ -29,7 +29,7 @@ export const CompareTable = ({ competitors, caption }: { competitors: Competitor
           {CRITERIA.map(({ key, label }) => (
             <tr key={key} className="border-t border-[var(--rule-soft)] align-top">
               <th scope="row" className="sticky left-0 bg-[var(--paper)] p-3 font-semibold min-w-[150px] border-r border-[var(--rule-soft)]">{label}</th>
-              <td className="p-3" data-label="Call Della">{CALL_DELLA[key]}</td>
+              <td className="p-3" data-label="Call Maren">{CALL_DELLA[key]}</td>
               {competitors.map((c) => (
                 <td key={c.slug} className="p-3" data-label={c.name}>
                   {c.facts[key].text}{' '}
@@ -50,7 +50,7 @@ export const CompareTable = ({ competitors, caption }: { competitors: Competitor
 export const CompareCTA = ({ line }: { line: string }) => (
   <div className="not-prose my-12 border-[1.5px] border-[var(--rule)] bg-[var(--paper)] p-6 md:p-8 shadow-[6px_6px_0_var(--rule)]">
     <p className="m-0 mb-5 font-serif text-[17px] leading-[1.6] text-[var(--ink)]">
-      {line} The demo takes {DEMO_MINUTES} minutes: you hear a live Della call for your practice area and see the dossier it produces.
+      {line} The demo takes {DEMO_MINUTES} minutes: you hear a live Maren call for your practice area and see the dossier it produces.
     </p>
     <CTAButton primary>Book a demo</CTAButton>
   </div>

@@ -6,7 +6,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://virtualreceptionistforlawyers.com';
 
 // The main brand site. Organization, founder and offers live there; feeders reference them.
-export const CALLDELLA_URL = 'https://calldella.com';
+export const CALLDELLA_URL = 'https://callmaren.com';
 
 export const PLAUSIBLE_DOMAIN =
   process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? new URL(SITE_URL).host;
@@ -15,13 +15,13 @@ export const N8N_WEBHOOK_URL =
   process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL ??
   'https://auto.juxtarank.com/webhook/call-della';
 
-// GHL booking widget (crm.antekautomation.com), shared by calldella.com and the feeder sites.
+// GHL booking widget (crm.antekautomation.com), shared by callmaren.com and the feeder sites.
 export const BOOKING_URL =
   process.env.NEXT_PUBLIC_BOOKING_URL ??
   'https://crm.antekautomation.com/widget/booking/4rCy7x8UfYzn4YktNNkF';
 
 export const CONTACT_EMAIL =
-  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'hello@calldella.com';
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'hello@callmaren.com';
 
 // Cloudflare Turnstile ("Call Della forms" widget). The token must be verified
 // server-side with the secret key wherever the form posts (n8n now, GHL later).
