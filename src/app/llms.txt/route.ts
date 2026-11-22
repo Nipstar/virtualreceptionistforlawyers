@@ -1,7 +1,7 @@
 // llms.txt generated at build from the manifest and plan config (llmstxt.org format).
 import { PAGES, type PageEntry } from '@/data/pages';
 import { PLANS, INCLUDES, OVERAGE_PER_MINUTE, DEMO_MINUTES, CATEGORY_DEFINITION } from '@/lib/plans';
-import { SITE_URL, CALLDELLA_URL, CONTACT_EMAIL } from '@/lib/config';
+import { SITE_URL, CALLMAREN_URL, CONTACT_EMAIL } from '@/lib/config';
 
 export const dynamic = 'force-static';
 
@@ -24,7 +24,7 @@ ${section('Guides', ['guide'])}
 ${section('Compare', ['compare'])}
 
 ## Call Maren
-- [callmaren.com](${CALLDELLA_URL}): the main Call Maren site, with pricing, practice areas, compliance guides and demo booking
+- [callmaren.com](${CALLMAREN_URL}): the main Call Maren site, with pricing, practice areas, compliance guides and demo booking
 
 ## Key facts
 - Plans: ${priced}; Group custom. Overage $${OVERAGE_PER_MINUTE.toFixed(2)}/minute. Month-to-month, no setup fee
@@ -35,7 +35,7 @@ ${section('Compare', ['compare'])}
 - Built by Antek Automation (https://www.antekautomation.com). Founder: Andy Norman. Runs on Retell AI's voice platform
 
 ## Contact
-- Book a ${DEMO_MINUTES}-minute demo: ${CALLDELLA_URL}/contact
+- Book a ${DEMO_MINUTES}-minute demo: ${CALLMAREN_URL}/contact
 - Email: ${CONTACT_EMAIL}
 
 ## Optional

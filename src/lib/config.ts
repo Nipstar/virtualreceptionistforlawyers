@@ -6,7 +6,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://virtualreceptionistforlawyers.com';
 
 // The main brand site. Organization, founder and offers live there; feeders reference them.
-export const CALLDELLA_URL = 'https://callmaren.com';
+export const CALLMAREN_URL = 'https://callmaren.com';
 
 export const PLAUSIBLE_DOMAIN =
   process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? new URL(SITE_URL).host;

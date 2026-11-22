@@ -9,7 +9,7 @@ import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, Table, SampleDoss
 import { COMPETITORS, CRITERIA, competitor, FETCHED } from '@/data/competitors';
 import { ALERTS, OVERAGE, SOLO, PRACTICE, SPANISH_AREAS, SRC, forwardText } from '@/lib/copy';
 import { DEMO_MINUTES, formatPrice } from '@/lib/plans';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 export const metadata: Metadata = pageMeta('/best-legal-answering-services');
 
@@ -182,7 +182,7 @@ export default function BestLegalAnsweringServices() {
       <ul>
         {COMPETITORS.map((c) => (
           <li key={c.slug}>
-            <a href={calldella(`/compare/${c.slug}`, CAMPAIGN, 'compare-list')}>{c.name} vs Call Maren</a>
+            <a href={callmaren(`/compare/${c.slug}`, CAMPAIGN, 'compare-list')}>{c.name} vs Call Maren</a>
           </li>
         ))}
       </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CTAButton } from '@/components/CTAButton';
-import { CRITERIA, CALL_DELLA, FETCHED, type Competitor } from '@/data/competitors';
+import { CRITERIA, CALL_MAREN, FETCHED, type Competitor } from '@/data/competitors';
 import { formatDate } from '@/data/pages';
 import { DEMO_MINUTES } from '@/lib/plans';
 
@@ -29,7 +29,7 @@ export const CompareTable = ({ competitors, caption }: { competitors: Competitor
           {CRITERIA.map(({ key, label }) => (
             <tr key={key} className="border-t border-[var(--rule-soft)] align-top">
               <th scope="row" className="sticky left-0 bg-[var(--paper)] p-3 font-semibold min-w-[150px] border-r border-[var(--rule-soft)]">{label}</th>
-              <td className="p-3" data-label="Call Maren">{CALL_DELLA[key]}</td>
+              <td className="p-3" data-label="Call Maren">{CALL_MAREN[key]}</td>
               {competitors.map((c) => (
                 <td key={c.slug} className="p-3" data-label={c.name}>
                   {c.facts[key].text}{' '}

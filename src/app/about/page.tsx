@@ -6,7 +6,7 @@ import { Source, Table } from '@/components/Page';
 import { pageMeta } from '@/data/pages';
 import { CATEGORY_DEFINITION, DEMO_MINUTES } from '@/lib/plans';
 import { SPANISH_AREAS, SRC } from '@/lib/copy';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 const SLUG = '/about';
 const CAMPAIGN = 'about';
@@ -35,18 +35,18 @@ export default function About() {
       <h2>Who is behind it</h2>
       <p>
         Call Maren was founded by{' '}
-        <a href={calldella('/about/andy-norman', CAMPAIGN, 'body')}>Andy Norman</a> and is built by Antek Automation on the Retell AI
+        <a href={callmaren('/about/andy-norman', CAMPAIGN, 'body')}>Andy Norman</a> and is built by Antek Automation on the Retell AI
         voice platform. Maren is the persona on the phone: an intake specialist, not a receptionist, trained on what a personal injury,
         criminal defense or immigration intake has to capture. This site and{' '}
-        <a href={calldella('/', CAMPAIGN, 'body')}>callmaren.com</a> describe the same service in the same words.
+        <a href={callmaren('/', CAMPAIGN, 'body')}>callmaren.com</a> describe the same service in the same words.
       </p>
 
       <h2>Who you contract with</h2>
       <p>
         Call Maren. Plans are month-to-month with no setup fee, and every plan is published on{' '}
-        <a href={calldella('/pricing', CAMPAIGN, 'body')}>callmaren.com/pricing</a>. Call data is encrypted in transit and at rest, your
+        <a href={callmaren('/pricing', CAMPAIGN, 'body')}>callmaren.com/pricing</a>. Call data is encrypted in transit and at rest, your
         firm owns every recording and transcript, retention is set per firm, and your callers&apos; data is never used to train AI
-        models. The full statement is on <a href={calldella('/security', CAMPAIGN, 'body')}>callmaren.com/security</a>.
+        models. The full statement is on <a href={callmaren('/security', CAMPAIGN, 'body')}>callmaren.com/security</a>.
       </p>
 
       <h2>What Maren does, and what she never does</h2>

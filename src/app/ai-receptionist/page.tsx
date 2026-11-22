@@ -7,7 +7,7 @@ import { CTAButton } from '@/components/CTAButton';
 import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, PlanTable, SampleDossier, MissedCallSection, Table } from '@/components/Page';
 import { ALERTS, OBJECTIONS, SPANISH_AREAS, SRC, forwardText } from '@/lib/copy';
 import { DEMO_MINUTES } from '@/lib/plans';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 export const metadata: Metadata = pageMeta('/ai-receptionist');
 
@@ -95,7 +95,7 @@ export default function AiReceptionist() {
         Maren does not. She collects facts and never advises, never quotes fees, never runs your conflicts check and never tells a
         caller the firm has taken the case. Every call opens with a recording disclosure set for your state. The attorney reads the
         dossier and decides. Call Maren&apos;s guide to{' '}
-        <a href={calldella('/compliance/aba-formal-opinion-512-explained', CAMPAIGN, 'body')}>ABA Formal Opinion 512</a> covers the bar
+        <a href={callmaren('/compliance/aba-formal-opinion-512-explained', CAMPAIGN, 'body')}>ABA Formal Opinion 512</a> covers the bar
         rules in detail.
       </p>
 
@@ -105,7 +105,7 @@ export default function AiReceptionist() {
         dossier. Retention is set per firm, to your own file retention policy. Your callers&apos; recordings, transcripts and dossiers
         are never used to train AI models. Call Maren does not claim HIPAA compliance, because whether HIPAA applies to a firm&apos;s
         intake call depends on the firm and the matter. The full statement is on{' '}
-        <a href={calldella('/security', CAMPAIGN, 'body')}>callmaren.com/security</a>.
+        <a href={callmaren('/security', CAMPAIGN, 'body')}>callmaren.com/security</a>.
       </p>
 
       <h2>AI answering service for lawyers: what to check before you sign</h2>

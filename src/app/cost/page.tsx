@@ -8,7 +8,7 @@ import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, PlanTable, Sample
 import { COMPETITORS, competitor, FETCHED } from '@/data/competitors';
 import { ALERTS, OBJECTIONS, OVERAGE, PRICE_ANSWER, SOLO, PRACTICE, SRC, forwardText } from '@/lib/copy';
 import { formatPrice } from '@/lib/plans';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 export const metadata: Metadata = pageMeta('/cost');
 
@@ -153,8 +153,8 @@ export default function Cost() {
       <PlanTable />
       <p>
         For the sum behind the price, callmaren.com has a{' '}
-        <a href={calldella('/operations/cost-per-signed-case-calculator', CAMPAIGN, 'body')}>cost per signed case calculator</a> and a{' '}
-        <a href={calldella('/operations/after-hours-intake-comparison', CAMPAIGN, 'body')}>comparison of after-hours intake options</a>,
+        <a href={callmaren('/operations/cost-per-signed-case-calculator', CAMPAIGN, 'body')}>cost per signed case calculator</a> and a{' '}
+        <a href={callmaren('/operations/after-hours-intake-comparison', CAMPAIGN, 'body')}>comparison of after-hours intake options</a>,
         including voicemail and in-house night staff.
       </p>
       <CTAButton primary large>Book a demo</CTAButton>

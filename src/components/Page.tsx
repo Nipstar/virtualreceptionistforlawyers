@@ -14,7 +14,7 @@ import { page, formatDate } from '@/data/pages';
 import { graph, serviceNode } from '@/lib/schema';
 import { PLANS, INCLUDES, GROUP_EXTRAS, DEMO_MINUTES, formatPrice } from '@/lib/plans';
 import { OVERAGE, GROUP } from '@/lib/copy';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 export const campaign = (slug: string) => (slug === '/' ? 'home' : slug.replace(/^\//, '').replace(/\//g, '-'));
 
@@ -231,7 +231,7 @@ export const MissedCallSection = ({
     <MissedCallCalculator example={example} />
     <p>
       For the method and what to count as a missed call, see the{' '}
-      <a href={calldella('/operations/missed-call-cost-calculator', campaign(slug), 'calculator')}>full missed-call cost calculator on callmaren.com</a>.
+      <a href={callmaren('/operations/missed-call-cost-calculator', campaign(slug), 'calculator')}>full missed-call cost calculator on callmaren.com</a>.
     </p>
   </section>
 );

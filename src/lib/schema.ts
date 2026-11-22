@@ -1,11 +1,11 @@
 // JSON-LD builders. Every entity has a stable @id; the feeder sites reference the same ids.
-import { SITE_URL, CALLDELLA_URL, CONTACT_EMAIL } from './config';
+import { SITE_URL, CALLMAREN_URL, CONTACT_EMAIL } from './config';
 import { CATEGORY_DEFINITION, PLANS } from './plans';
 
-export const ORG_ID = `${CALLDELLA_URL}/#org`;
+export const ORG_ID = `${CALLMAREN_URL}/#org`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
-export const FOUNDER_ID = `${CALLDELLA_URL}/about/andy-norman#person`;
-export const FOUNDER_URL = `${CALLDELLA_URL}/about/andy-norman`;
+export const FOUNDER_ID = `${CALLMAREN_URL}/about/andy-norman#person`;
+export const FOUNDER_URL = `${CALLMAREN_URL}/about/andy-norman`;
 
 type Node = Record<string, unknown>;
 
@@ -34,9 +34,9 @@ export const orgNode = (): Node => ({
   '@id': ORG_ID,
   name: 'Call Maren',
   alternateName: 'Maren',
-  url: CALLDELLA_URL,
-  logo: { '@type': 'ImageObject', url: `${CALLDELLA_URL}/logo.png`, width: 512, height: 512 },
-  image: `${CALLDELLA_URL}/og-default.png`,
+  url: CALLMAREN_URL,
+  logo: { '@type': 'ImageObject', url: `${CALLMAREN_URL}/logo.png`, width: 512, height: 512 },
+  image: `${CALLMAREN_URL}/og-default.png`,
   description: CATEGORY_DEFINITION,
   foundingDate: '2026',
   founder: { '@id': FOUNDER_ID },
@@ -132,9 +132,9 @@ export const faqNode = (items: QA[]): Node => ({
 export const offerNodes = (): Node[] =>
   PLANS.map((p) => ({
     '@type': 'Offer',
-    '@id': `${CALLDELLA_URL}/pricing#${p.id}`,
+    '@id': `${CALLMAREN_URL}/pricing#${p.id}`,
     name: p.name,
-    url: `${CALLDELLA_URL}/pricing`,
+    url: `${CALLMAREN_URL}/pricing`,
     priceCurrency: 'USD',
     ...(p.price !== null
       ? {
@@ -157,7 +157,7 @@ export const serviceNode = (s: { path: string; name: string; description: string
   provider: { '@id': ORG_ID },
   audience: { '@type': 'BusinessAudience', audienceType: 'Law firms' },
   areaServed: { '@type': 'Country', name: 'United States' },
-  offers: PLANS.map((p) => ({ '@id': `${CALLDELLA_URL}/pricing#${p.id}` })),
+  offers: PLANS.map((p) => ({ '@id': `${CALLMAREN_URL}/pricing#${p.id}` })),
 });
 
 // Hub pages: the page is a collection whose main entity is the list of its child pages.

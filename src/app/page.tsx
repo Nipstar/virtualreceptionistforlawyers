@@ -6,7 +6,7 @@ import { CTAButton } from '@/components/CTAButton';
 import { ServiceLayout, Hero, AnswerBlock, Source, ProblemFix, PlanTable, SampleDossier, MissedCallSection, campaign } from '@/components/Page';
 import { ALERTS, PRICE_ANSWER, SPANISH_AREAS, SRC, forwardText } from '@/lib/copy';
 import { DEMO_MINUTES } from '@/lib/plans';
-import { calldella } from '@/lib/utm';
+import { callmaren } from '@/lib/utm';
 
 export const metadata: Metadata = pageMeta('/');
 
@@ -93,8 +93,8 @@ export default function Home() {
       <p>
         <strong>Practice areas.</strong> For personal injury firms, injury intake has its own site at{' '}
         <a href="https://personalinjuryansweringservice.com/">personalinjuryansweringservice.com</a>. For criminal defense and immigration, see{' '}
-        <a href={calldella('/criminal-defense', C, 'practice-areas')}>Maren for criminal defense</a> and{' '}
-        <a href={calldella('/immigration', C, 'practice-areas')}>Maren for immigration</a> on callmaren.com.
+        <a href={callmaren('/criminal-defense', C, 'practice-areas')}>Maren for criminal defense</a> and{' '}
+        <a href={callmaren('/immigration', C, 'practice-areas')}>Maren for immigration</a> on callmaren.com.
       </p>
 
       <h2>Where should you read next?</h2>

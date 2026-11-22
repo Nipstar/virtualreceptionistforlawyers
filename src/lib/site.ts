@@ -1,9 +1,9 @@
 // Per-site settings. This is the only file that differs between feeder repos (plus the pages).
-import { calldella } from './utm';
+import { callmaren } from './utm';
 
 export type NavLink = { href: string; label: string };
 
-const cd = (path: string, label: string): NavLink => ({ href: calldella(path, 'footer', 'footer'), label });
+const cd = (path: string, label: string): NavLink => ({ href: callmaren(path, 'footer', 'footer'), label });
 
 export const SITE = {
   id: 'vr',
