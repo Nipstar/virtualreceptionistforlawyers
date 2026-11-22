@@ -46,7 +46,7 @@ export const page = (path: string): PageEntry => {
 export const pageMeta = (path: string, extra: Partial<Metadata> = {}): Metadata => {
   const p = page(path);
   const url = `${SITE_URL}${path === '/' ? '' : path}`;
-  const image = '/og-default.png';
+  const image = '/og-default.webp';
   return {
     title: { absolute: p.title },
     description: p.description,

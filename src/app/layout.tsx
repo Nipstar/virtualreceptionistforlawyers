@@ -44,14 +44,14 @@ export const metadata: Metadata = {
     title: "Virtual Receptionist for Lawyers | Call Maren",
     description:
       "Maren answers your firm's overnight calls, qualifies every caller, and delivers a triage-ready dossier by dawn.",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Call Maren" }],
+    images: [{ url: "/og-default.webp", width: 1200, height: 630, alt: "Call Maren" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Virtual Receptionist for Lawyers | Call Maren",
     description:
       "Maren answers your firm's overnight calls and delivers a triage-ready dossier by dawn.",
-    images: ["/og-default.png"],
+    images: ["/og-default.webp"],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   // Set these in Vercel once Search Console / Bing Webmaster Tools give you the codes.
